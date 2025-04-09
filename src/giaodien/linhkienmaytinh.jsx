@@ -11,7 +11,7 @@ const ProductSection = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://dientuonlineapi.byethost15.com/Api/getdsSanPhamLinhKien.php")
+    fetch("https://test-php-api-t67p.onrender.com/Api/getdsSanPhamLinhKien.php")
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error("Lỗi lấy sản phẩm:", err));
