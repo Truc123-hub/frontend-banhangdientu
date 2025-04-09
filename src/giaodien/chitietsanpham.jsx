@@ -16,7 +16,7 @@ const ChitietSanpham = () => {
       setError(null);
 
       try {
-        const response = await fetch(`http://localhost/backendWebbandodientu/Api/getdsSanPham.php?id=${id}`);
+        const response = await fetch(`/Api/getdsSanPham.php?id=${id}`);
 
         // Kiểm tra phản hồi từ API
         if (!response.ok) {

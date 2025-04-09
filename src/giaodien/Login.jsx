@@ -20,7 +20,7 @@ const Login = ({ setUsername }) => {
     setIsLoading(true);  // Bắt đầu loading
 
     try {
-      const response = await fetch('http://localhost/backendWebbandodientu/Api/dangnhap.php', {
+      const response = await fetch('http://dientuonlineapi.byethost15.com/Api/dangnhap.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
